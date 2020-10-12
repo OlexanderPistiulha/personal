@@ -20,7 +20,7 @@ const getTemplate = (data = [], placeholder, selectedId) => {
     return `
     <div class="select__input" data-type = "input">
         <span class="select__input-text" data-type = "value">${text}</span>
-        <img class="select__input-img select__input-img-down" src="assets/libs/select-plugin/assets/img/select-arrow-up-down.svg" alt="" data-type = "arrow">
+        <img class="select__input-img select__input-img-down" src="assets/libs/select-plugin/assets/img/select-arrow-up-down.svg" alt="" data-arrow = "arrow" data-type = "input">
     </div>
     <div class="select__dropdown">
          <ul class="select__list">
@@ -51,7 +51,7 @@ class Select {
     #setup() {
         this.clickHandler = this.clickHandler.bind(this);
         this.$el.addEventListener('click', this.clickHandler);
-        this.$arrow = this.$el.querySelector('[data-type="arrow"]');
+        this.$arrow = this.$el.querySelector('[data-arrow="arrow"]');
         this.$value = this.$el.querySelector('[data-type = "value"]');
     }
 
