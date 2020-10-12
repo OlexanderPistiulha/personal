@@ -25,29 +25,91 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+}
 
-    .site {
-        margin-bottom: 40px;
-        margin-top: 40px;
-        width: 47%;
+.site {  
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 47%;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.46);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    @media screen and (max-width: 1400px) {
+        height: 350px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 90%;
         height: 450px;
-        background-color: #fff;
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+        height: 350px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 270px;
+    }
+
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
         border-radius: 5px;
-        box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
+        transition: .5s;
+    }
 
-        @media screen and (max-width: 1400px) {
-            height: 350px;
-        }
+    &__mode {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: rgba(11, 11, 11, 0.503);
+        transition: .5s;
+    }
 
-        @media screen and (max-width: 1100px) {
-            width: 80%;
-        }
+    &__title {
+        position: absolute;      
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+        font-size: 34px;
+        color: rgb(226, 224, 224);
+        opacity: 0;        
+        transition: opacity .5s;
+    }
 
-        @media screen and (max-width: 800px) {
-            width: 100%;
-        }
+    &:hover &__title {
+        opacity: 1;
+    }
+
+    &:hover &__mode {
+        background-color: rgba(11, 11, 11, 0.242);
+    }
+
+    &:hover &__img {
+        transform: scale(1.1);
     }
 }
+
 
 .effects {
     width: 100%;
@@ -57,7 +119,7 @@ body {
     flex-wrap: wrap;
 
     @media screen and (max-width: 1100px) {
-        //justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
