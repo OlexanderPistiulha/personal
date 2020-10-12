@@ -1,33 +1,100 @@
 const select = new Select('#select', {
     placeholder: 'Анимация фона',
-    
     // текст с item.value вместо preceholder
     // selectedId: '4',
-    data:[
-        {id: '1', value: 'item__1', link: '#'},
-        {id: '2', value: 'item__2', link: '#'},
-        {id: '3', value: 'item__3', link: '#'},
-        {id: '4', value: 'item__4', link: '#'},
-        {id: '5', value: 'item__5', link: '#'},
-        {id: '6', value: 'item__6', link: '#'},
-        {id: '7', value: 'item__7', link: '#'},
-        {id: '8', value: 'item__8', link: '#'},
+    data: [{
+            id: '1',
+            value: 'item__1',
+            link: '#'
+        },
+        {
+            id: '2',
+            value: 'item__2',
+            link: '#'
+        },
+        {
+            id: '3',
+            value: 'item__3',
+            link: '#'
+        },
+        {
+            id: '4',
+            value: 'item__4',
+            link: '#'
+        },
+        {
+            id: '5',
+            value: 'item__5',
+            link: '#'
+        },
+        {
+            id: '6',
+            value: 'item__6',
+            link: '#'
+        },
+        {
+            id: '7',
+            value: 'item__7',
+            link: '#'
+        },
+        {
+            id: '8',
+            value: 'item__8',
+            link: '#'
+        },
     ]
 });
 
 const selectTwo = new Select('#select-two', {
     placeholder: 'Анимация фона',
-    
     // текст с item.value вместо preceholder
     // selectedId: '4',
-    data:[
-        {id: '1', value: 'item__1', link: '#'},
-        {id: '2', value: 'item__2', link: '#'},
-        {id: '3', value: 'item__3', link: '#'},
-        {id: '4', value: 'item__4', link: '#'},
-        {id: '5', value: 'item__5', link: '#'},
-        {id: '6', value: 'item__6', link: '#'},
-        {id: '7', value: 'item__7', link: '#'},
-        {id: '8', value: 'item__8', link: '#'},
+    data: [{
+            id: '1',
+            value: 'item__1',
+            link: '#'
+        },
+        {
+            id: '2',
+            value: 'item__2',
+            link: '#'
+        },
+        {
+            id: '3',
+            value: 'item__3',
+            link: '#'
+        },
+        {
+            id: '4',
+            value: 'item__4',
+            link: '#'
+        },
+        {
+            id: '5',
+            value: 'item__5',
+            link: '#'
+        },
+        {
+            id: '6',
+            value: 'item__6',
+            link: '#'
+        },
+        {
+            id: '7',
+            value: 'item__7',
+            link: '#'
+        },
+        {
+            id: '8',
+            value: 'item__8',
+            link: '#'
+        },
     ]
 });
+
+document.querySelector('.sites').addEventListener('click', (e) => {
+    if (e.target.classList.contains('site__mode')) {
+        window.open(`${e.target.dataset.link}`);
+    } else return;
+});
+
