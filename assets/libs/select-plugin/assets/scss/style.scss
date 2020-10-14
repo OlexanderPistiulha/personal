@@ -32,14 +32,17 @@ $height: 46px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        cursor: pointer;      
+        cursor: pointer;
     }
 
-    &__input-text {}
+    &__input-text {
+        user-select: none;
+    }
 
     &__input-img {
         width: 18px;
         height: 18px;
+        user-select: none;
     }
 
     &__input-img-down {
@@ -72,6 +75,7 @@ $height: 46px;
         border-bottom: 1px solid #ccc;
         background-color: #fff;
         color: #ccc;
+        user-select: none;
 
         &:hover {
             background-color: #eee;

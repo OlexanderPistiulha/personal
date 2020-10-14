@@ -46,9 +46,20 @@
   cursor: pointer;
 }
 
+.select__input-text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .select__input-img {
   width: 18px;
   height: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .select__input-img-down {
@@ -84,6 +95,10 @@
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   color: #ccc;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .select__item:hover {
