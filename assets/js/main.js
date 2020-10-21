@@ -66,7 +66,7 @@ const select = new Select('#select', {
 });
 
 const selectTwo = new Select('#select-two', {
-    placeholder: 'Button animation',   
+    placeholder: 'Button animation',
     data: [{
             id: '1',
             value: 'Button 3D',
@@ -101,14 +101,13 @@ const selectTwo = new Select('#select-two', {
             id: '7',
             value: 'Button liquid',
             link: 'select/AnimationsTricks/button/LiquidButton(HTML SCSS CSS JS )/index.html'
-        },       
+        },
     ]
 });
 
 const selectTree = new Select('#select-three', {
-    placeholder: 'Goods card',   
-    data: [
-        {
+    placeholder: 'Goods card',
+    data: [{
             id: '1',
             value: 'Capitan Marvel',
             link: 'select/AnimationsTricks/card/CardAdaptiveCapitanMarvel/index.html'
@@ -173,43 +172,166 @@ const selectTree = new Select('#select-three', {
             value: 'Card two',
             link: 'select/AnimationsTricks/card/CardTwo(HTML SCSS CSS Vanilla tilt.js)/index.html'
         },
-       
-       
+
+
     ]
 });
 
 const selectFour = new Select('#select-four', {
-    placeholder: 'Button animation',   
+    placeholder: 'Loader animation',
     data: [{
-            id: '',
-            value: '',
-            link: ''
+            id: '1',
+            value: 'loader one',
+            link: 'select/AnimationsTricks/loaders/loader-one/index.html'
         },
-       
+        {
+            id: '2',
+            value: 'loader two',
+            link: 'select/AnimationsTricks/loaders/loader-two/index.html'
+        },
+        {
+            id: '3',
+            value: 'loader three',
+            link: 'select/AnimationsTricks/loaders/loader-three/index.html'
+        },
+        {
+            id: '4',
+            value: 'loader four',
+            link: 'select/AnimationsTricks/loaders/loader-four/index.html'
+        },
+        {
+            id: '5',
+            value: 'loader five',
+            link: 'select/AnimationsTricks/loaders/loader-five/index.html'
+        },
+        {
+            id: '6',
+            value: 'loader six',
+            link: 'select/AnimationsTricks/loaders/loader-six/index.html'
+        },
+        {
+            id: '7',
+            value: 'loade seven',
+            link: 'select/AnimationsTricks/loaders/loader-seven/index.html'
+        },
+        {
+            id: '8',
+            value: 'loader eight',
+            link: 'select/AnimationsTricks/loaders/loader-eight/index.html'
+        },
+        {
+            id: '9',
+            value: 'loader nine',
+            link: 'select/AnimationsTricks/loaders/loader-nine/index.html'
+        },
+        {
+            id: '10',
+            value: 'loader ten',
+            link: 'select/AnimationsTricks/loaders/loader-ten/index.html'
+        },
+        {
+            id: '11',
+            value: 'loader eleven',
+            link: 'select/AnimationsTricks/loaders/loader-eleven/index.html'
+        },
+
     ]
 });
 
 const selectFive = new Select('#select-five', {
-    placeholder: 'Button animation',   
+    placeholder: 'Scroll animation',
     data: [{
-            id: '',
-            value: '',
-            link: ''
+            id: '1',
+            value: 'Scroll one',
+            link: 'select/AnimationsTricks/scroll/scroll-one/index.html'
         },
-       
+        {
+            id: '2',
+            value: 'Scroll to top',
+            link: 'select/AnimationsTricks/scroll/scroll-to-top-button/index.html'
+        },
     ]
 });
 
 const selectSix = new Select('#select-six', {
-    placeholder: 'Button animation',   
+    placeholder: 'Input animation',
     data: [{
-            id: '',
-            value: '',
-            link: ''
+            id: '1',
+            value: 'Input number',
+            link: 'select/AnimationsTricks/input/InputNumber/index.html'
         },
-       
+
     ]
 });
+
+const selectSeven = new Select('#select-seven', {
+    placeholder: 'Text animation',
+    data: [{
+            id: '1',
+            value: 'Mouse on text',
+            link: 'select/AnimationsTricks/text/MouseOnTheText/index.html'
+        },
+        {
+            id: '2',
+            value: 'Strike througt text',
+            link: 'select/AnimationsTricks/text/StrikethroughText/index.html'
+        },
+        {
+            id: '3',
+            value: 'Text black and white',
+            link: 'select/AnimationsTricks/text/TextBlackAndWhite/index.html'
+        },
+        {
+            id: '4',
+            value: 'Text black and white version two',
+            link: 'select/AnimationsTricks/text/TextBlackAndWhiteVersTwo/index.html'
+        },
+        {
+            id: '5',
+            value: 'Text clip path',
+            link: 'select/AnimationsTricks/text/TextClipPath/index.html'
+        },
+        {
+            id: '6',
+            value: 'Text reveal',
+            link: 'select/AnimationsTricks/text/TextReveal/index.html'
+        },
+    ]
+});
+
+
+const selectEight = new Select('#select-eight', {
+    placeholder: 'SVG animation',
+    data: [
+        {
+            id: '1',
+            value: 'Bubble',
+            link: 'select/SVG-animation/SVG-animation-bubble(HTML SCSS CSS)/index.html'
+        },
+        {
+            id: '2',
+            value: 'Button',
+            link: 'select/SVG-animation/SVG-animation-button(HTML SCSS CSS)/index.html'
+        },
+        {
+            id: '3',
+            value: 'text and video',
+            link: 'select/SVG-animation/SVG-animation-text + bg-video(HTML SCSS CSS )/index.html'
+        },
+        {
+            id: '4',
+            value: 'text',
+            link: 'select/SVG-animation/SVG-animation-text(HTML SCSS CSS JS)/index.html'
+        },
+        {
+            id: '5',
+            value: 'SVG animation one',
+            link: 'select/SVG-animation/SVG-animation(HTML SCSS CSS )/index.html'
+        },
+
+    ]
+});
+
 
 document.querySelector('.sites').addEventListener('click', (e) => {
     if (e.target.classList.contains('site__mode')) {
