@@ -332,8 +332,14 @@ const selectEight = new Select('#select-eight', {
     ]
 });
 
+const siteList = document.querySelectorAll('.sites');
+siteList[0].addEventListener('click', (e) => {
+    if (e.target.classList.contains('site__mode')) {
+        window.open(`${e.target.dataset.link}`);
+    } else return;
+});
 
-document.querySelector('.sites').addEventListener('click', (e) => {
+siteList[1].addEventListener('click', (e) => {
     if (e.target.classList.contains('site__mode')) {
         window.open(`${e.target.dataset.link}`);
     } else return;
