@@ -1,16 +1,18 @@
 @import "__common-style";
+@import "__loader";
 
 body {
     height: 100vh;
 }
 
-.wrapper {
-    height: 100%;
+.wrapperr {}
 
+.conteiner {
+    height: 100%;
     margin: 0 auto;
     max-width: 1800px;
     width: 100%;
-    padding: 0 30px 0 30px;
+    padding: 0px 30px 30px 30px;
 }
 
 .sites {
@@ -27,9 +29,9 @@ body {
 }
 
 .site {
-    margin-bottom: 40px;
+    position: relative;
     margin-top: 40px;
-    width: 47%;
+    width: 48%;
     height: 450px;
     border-radius: 5px;
     box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.46);
@@ -89,7 +91,10 @@ body {
         top: 20px;
         left: 20px;
         z-index: 3;
+        font-family: 'Bitter', serif;
+        font-weight: 700;
         font-size: 34px;
+        letter-spacing: 2px;
         color: rgb(226, 224, 224);
         opacity: 0;
         transition: opacity .5s;
@@ -107,14 +112,14 @@ body {
         transition: .5s;
     }
 
-    &__icon-item {              
-    }
+    &__icon-item {}
 
     &__icon-img {
         width: 44px;
-        height: 44px;           
+        height: 44px;
     }
-    &:hover  &__icon-list {
+
+    &:hover &__icon-list {
         opacity: 1;
     }
 
@@ -135,7 +140,7 @@ body {
 
 .effects {
     width: 100%;
-    padding: 40px 0;
+    //padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: start;

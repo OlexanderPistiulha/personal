@@ -1,3 +1,8 @@
+window.addEventListener('load', function () {
+    let preloader = document.querySelector('.preloader');
+    preloader.style.display = 'none';
+});
+
 const select = new Select('#select', {
     placeholder: 'Background animation',
     // текст с item.value вместо preceholder
@@ -302,8 +307,7 @@ const selectSeven = new Select('#select-seven', {
 
 const selectEight = new Select('#select-eight', {
     placeholder: 'SVG animation',
-    data: [
-        {
+    data: [{
             id: '1',
             value: 'Bubble',
             link: 'select/SVG-animation/SVG-animation-bubble(HTML SCSS CSS)/index.html'

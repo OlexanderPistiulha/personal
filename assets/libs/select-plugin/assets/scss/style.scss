@@ -1,7 +1,7 @@
 $height: 46px;
 
 .select {
-    width: 47%;
+    width: 48%;
     position: relative;
     margin-top: 40px;
 
@@ -24,6 +24,8 @@ $height: 46px;
     }
 
     &__input {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
         background-color: #fff;
         box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
         border-radius: 5px;
@@ -63,7 +65,7 @@ $height: 46px;
         left: 0;
         right: 0;
         z-index: 1000;
-        max-height: 280px;
+        max-height: 264px;
         overflow-y: auto;
     }
 
@@ -85,11 +87,13 @@ $height: 46px;
     }
 
     &__link {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;   
         width: 100%;
         padding: 15px;
         display: inline-block;
         text-decoration: none;
-        color: rgb(70, 70, 70);
+        color: rgb(46, 45, 45);
 
         &.selected {
             background-color: rgb(185, 184, 184);

@@ -1,5 +1,5 @@
 .select {
-  width: 47%;
+  width: 48%;
   position: relative;
   margin-top: 40px;
 }
@@ -25,6 +25,8 @@
 }
 
 .select__input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
           box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
@@ -83,7 +85,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  max-height: 280px;
+  max-height: 264px;
   overflow-y: auto;
 }
 
@@ -109,11 +111,13 @@
 }
 
 .select__link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
   width: 100%;
   padding: 15px;
   display: inline-block;
   text-decoration: none;
-  color: #464646;
+  color: #2e2d2d;
 }
 
 .select__link.selected {
