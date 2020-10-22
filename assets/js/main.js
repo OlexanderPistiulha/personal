@@ -1,6 +1,8 @@
 window.addEventListener('load', function () {
     let preloader = document.querySelector('.preloader');
+    document.querySelector('.preloader-active').classList.remove('preloader-active');
     preloader.style.display = 'none';
+
 });
 
 const select = new Select('#select', {

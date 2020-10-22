@@ -48,10 +48,6 @@ li {
   overflow-y: hidden;
 }
 
-.preloader-close {
-  opacity: 0;
-}
-
 @-webkit-keyframes animateLoader {
   0% {
     opacity: 1;

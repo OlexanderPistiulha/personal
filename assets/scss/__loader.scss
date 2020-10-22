@@ -4,8 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10000;
-    opacity: 1;
+    z-index: 10000;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +17,6 @@
     overflow-y: hidden;
 }
 
-.preloader-close {
-    opacity: 0;
-  
-}
 
 @keyframes animateLoader {
     0% {
